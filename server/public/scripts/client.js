@@ -14,7 +14,7 @@ $(document).ready(function(){
 // creating number inputs for object
   $('.numberButton').on('click', function() {
     console.log($(this).text());
-    objectToSend.input1 = $(this).text();
+    objectToSend.input1 += $(this).text();
     updateDisplay();
   }); //end of number on click
 
