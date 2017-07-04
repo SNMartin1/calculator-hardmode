@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded( {extended: true}));
 
 //POST
-app.post('/calucation', function(req, res){
+app.post('/calculation', function(req, res){
   console.log('input recieved', req.body);
   var responseObject = {
     calculation: math(req.body)

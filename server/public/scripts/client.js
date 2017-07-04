@@ -30,7 +30,7 @@ $(document).ready(function(){
   }); //end of mathOperator
 
 // hitting the "calculate" button sends the object to the server.
-  $('.calculate').on('click', function() {
+  $('.calculateButton').on('click', function() {
     console.log('objectToSend: ', objectToSend);
     //if input1 and input2 are not empty, send object to server
     if (objectToSend.input1 !== '' && objectToSend.input2 !== '') {
@@ -59,5 +59,5 @@ function updateDisplay() {
 
 //mathOperator is displayed on the screen
 function displayOperator() {
-  $('#display').text(objectToSend.type);
+  $('#display').val(objectToSend.type);
 }
