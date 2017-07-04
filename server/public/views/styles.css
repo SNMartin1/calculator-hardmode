@@ -1,0 +1,62 @@
+.container {
+  margin-left: 100px;
+  display: inline-block;
+  height: 250px;
+  width: 300px;
+  border-style: solid;
+  border-color: black;
+  background-color: lightgray;
+}
+
+.inputs {
+  margin-left: 15px
+
+}
+
+#display {
+  height: 50px;
+  width: 260px;
+  margin-top: 10px;
+  margin-left: 15px;
+  background-color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: right;
+  
+}
+
+.numberButton {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: lightblue;
+}
+
+.numberButton:hover {
+  background-color: lightyellow;
+}
+
+.mathOperator {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: violet;
+}
+
+.mathOperator:hover {
+  background-color: lightyellow;
+}
+
+.calculateButton {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.clearButton {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: white;
+}

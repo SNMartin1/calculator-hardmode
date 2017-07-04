@@ -23,7 +23,6 @@ $(document).ready(function(){
     console.log($(this).text());
     objectToSend.type = $(this).text();
     displayOperator();
-    console.log(displayOperator());
 //setting input2 to first value and then clearing input1 so that it can take another value
     objectToSend.input2 = objectToSend.input1;
     objectToSend.input1 = '';
@@ -42,11 +41,16 @@ $(document).ready(function(){
           console.log('input sent to server to be calcuated');
           //display calculation response in the display input
           $('#display').val(response.calculation);
+          console.log(response.calculation);
         } //end of success function
       }); //end of ajax POST
     } //end of if statement
   }); //end of calculate button
 
+  //clearing inputs
+  $('.clearButton').on('click', function(){
+    $('#display').val('');
+  }); //end of on click of clearButton
 
 
 
