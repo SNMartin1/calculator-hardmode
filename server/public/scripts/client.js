@@ -49,6 +49,9 @@ $(document).ready(function(){
 
   //clearing inputs
   $('.clearButton').on('click', function(){
+    objectToSend.input2 = '';
+    objectToSend.input1 = '';
+    objectToSend.type = '';
     $('#display').val('');
   }); //end of on click of clearButton
 
