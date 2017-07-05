@@ -41,6 +41,7 @@ $(document).ready(function(){
           console.log('input sent to server to be calcuated');
           //display calculation response in the display input
           $('#display').val(response.calculation);
+          objectToSend.input1 = response.calculation;
           console.log(response.calculation);
         } //end of success function
       }); //end of ajax POST
